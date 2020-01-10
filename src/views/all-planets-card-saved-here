@@ -1,0 +1,230 @@
+  <!-- Mercury-->
+       
+      <v-col>
+        <v-row>
+
+          <v-col>
+            <v-card class="mx-auto" max-width="344" color="transparent" flat>
+              <v-img src="../assets/solarsystem/mercury.png" height="200px"></v-img>
+              <div class="planettextback">
+                <v-card-title>Mercury</v-card-title>
+                <v-card-subtitle>Nr.1 - The smallest planet</v-card-subtitle>
+                <v-card-actions>
+                  <v-btn color="yellow" text>Explore</v-btn>
+                  <v-spacer></v-spacer>
+                  <v-btn icon @click="show =!show">
+                    <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                  </v-btn>
+                </v-card-actions>
+                <v-expand-transition>
+                  <div v-show="show">
+                    <v-divider></v-divider>
+                    <v-card-text>“The closest planet to the sun that orbits the sun within only 87.9 earth days, should be the hottest planet in the whole solar system”, one would think. Even though this is not entirely true, one would not be mistaken for thinking that way. Mercury has the most ironic temperature rage in the whole solar system. Since the planet virtually has no atmosphere, it makes it difficult for the sun to travel from the daylight side to the night side. This means that one half of the planet is always extremely hot at +430 degree C, while the other is so cold at -180 degree C. So to live on this planet, you would either burn or freeze to death instantly.</v-card-text>
+                  </div>
+                </v-expand-transition>
+              </div>
+            </v-card>
+          </v-col>
+
+          <!-- Jupiter-->
+          <v-col>
+            <v-hover v-slot:default="{ hover }">
+              <v-card
+                class="mx-auto"
+                max-width="344"
+                color="transparent"
+                :elevation="hover ? 12 : 0"
+              >
+                <v-img src="../assets/solarsystem/jupiter.png" height="200px"></v-img>
+                <div class="planettextback">
+                  <v-card-title>Jupiter</v-card-title>
+                  <v-card-subtitle>Nr. 5 - The largest planet</v-card-subtitle>
+                  <v-card-actions>
+                    <v-btn color="yellow" text>Explore</v-btn>
+                    <v-spacer></v-spacer>
+                    <v-btn icon @click="show2 =!show2">
+                      <v-icon>{{ show2 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                    </v-btn>
+                  </v-card-actions>
+                  <!-- v-show="show"-->
+                  <v-expand-transition>
+                    <div v-show="show2">
+                      <v-divider></v-divider>
+                      <v-card-text>Jupiter is the 5th and the largest planet in the solar system almost more than twice the mass as all the other planets put together. This planet is always referred to as the giant planet, due to its amazing size. Jupiter is almost made of gas with almost 75% hydrogen, and 24% helium. Its core is presumed rocky hard, while surrounded with a sea with metallic liquid.</v-card-text>
+                    </div>
+                  </v-expand-transition>
+                </div>
+              </v-card>
+            </v-hover>
+          </v-col>
+
+          <!-- Saturn-->
+          <v-col>
+            <v-card class="mx-auto" max-width="344" color="transparent" flat>
+              <v-img src="../assets/solarsystem/saturn.png" height="200px"></v-img>
+              <div class="planettextback">
+                <v-card-title>Saturn</v-card-title>
+                <v-card-subtitle>Nr.6 - the second biggest planet AND got a cool belt!</v-card-subtitle>
+                <v-card-actions>
+                  <v-btn color="yellow" text>Explore</v-btn>
+                  <v-spacer></v-spacer>
+                  <v-btn icon @click="show3=!show3">
+                    <v-icon>{{ show3 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                  </v-btn>
+                </v-card-actions>
+                <v-expand-transition>
+                  <div v-show="show3">
+                    <v-divider></v-divider>
+                    <v-card-text>Fun fact! Saturn generates more heat in itself than it receives from the sun. Saturn is the 6 planet placed away from the sun. As you very well know, its the planet with a ring around it, which off the record looks pretty cool. It's also the second biggest planet in the solar system from Jupiter. Like jupiter, the planet is also comprised with gas about 96% hydrogen, and 3% helium, which also makes saturn's core just as rocky or even rockier than Jupiter's core. Again like jupiter, saturn is also surrounded by a sea with a metallic liquid.</v-card-text>
+                  </div>
+                </v-expand-transition>
+              </div>
+            </v-card>
+          </v-col>
+
+          <!--Earth-->
+          <v-col>
+            <v-card class="mx-auto" max-width="344" color="transparent" flat>
+              <v-img src="../assets/solarsystem/earth.png" height="200px"></v-img>
+              <div class="planettextback">
+                <v-card-title>Earth</v-card-title>
+                <v-card-subtitle>Nr.6 - the second biggest planet AND got a cool belt!</v-card-subtitle>
+                <v-card-actions>
+                  <v-btn color="yellow" text>Explore</v-btn>
+                  <v-spacer></v-spacer>
+                  <v-btn icon @click="show4=!show4">
+                    <v-icon>{{ show4 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                  </v-btn>
+                </v-card-actions>
+                <v-expand-transition>
+                  <div v-show="show4">
+                    <v-divider></v-divider>
+                    <v-card-text>Fun fact! Saturn generates more heat in itself than it receives from the sun. Saturn is the 6 planet placed away from the sun. As you very well know, its the planet with a ring around it, which off the record looks pretty cool. It's also the second biggest planet in the solar system from Jupiter. Like jupiter, the planet is also comprised with gas about 96% hydrogen, and 3% helium, which also makes saturn's core just as rocky or even rockier than Jupiter's core. Again like jupiter, saturn is also surrounded by a sea with a metallic liquid.</v-card-text>
+                  </div>
+                </v-expand-transition>
+              </div>
+            </v-card>
+          </v-col>
+
+
+      <v-img id="layerrocket" src="../assets/rocketparallax.png"></v-img>
+          <!-- mars -->
+          <v-col>
+            <v-card class="mx-auto" max-width="344" color="transparent" flat>
+              <v-img src="../assets/solarsystem/mars.png" height="200px"></v-img>
+              <div class="planettextback">
+                <v-card-title>Mars</v-card-title>
+                <v-card-subtitle>Nr.6 - the second biggest planet AND got a cool belt!</v-card-subtitle>
+                <v-card-actions>
+                  <v-btn color="yellow" text>Explore</v-btn>
+                  <v-spacer></v-spacer>
+                  <v-btn icon @click="show5=!show5">
+                    <v-icon>{{ show5 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                  </v-btn>
+                </v-card-actions>
+                <v-expand-transition>
+                  <div v-show="show5">
+                    <v-divider></v-divider>
+                    <v-card-text>Fun fact! Saturn generates more heat in itself than it receives from the sun. Saturn is the 6 planet placed away from the sun. As you very well know, its the planet with a ring around it, which off the record looks pretty cool. It's also the second biggest planet in the solar system from Jupiter. Like jupiter, the planet is also comprised with gas about 96% hydrogen, and 3% helium, which also makes saturn's core just as rocky or even rockier than Jupiter's core. Again like jupiter, saturn is also surrounded by a sea with a metallic liquid.</v-card-text>
+                  </div>
+                </v-expand-transition>
+              </div>
+            </v-card>
+          </v-col>
+
+          <!--neptune-->
+          <v-col>
+            <v-card class="mx-auto" max-width="344" color="transparent" flat>
+              <v-img src="../assets/solarsystem/neptune.png" height="200px"></v-img>
+              <div class="planettextback">
+                <v-card-title>Neptune</v-card-title>
+                <v-card-subtitle>Nr.6 - the second biggest planet AND got a cool belt!</v-card-subtitle>
+                <v-card-actions>
+                  <v-btn color="yellow" text>Explore</v-btn>
+                  <v-spacer></v-spacer>
+                  <v-btn icon @click="show6=!show6">
+                    <v-icon>{{ show6 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                  </v-btn>
+                </v-card-actions>
+                <v-expand-transition>
+                  <div v-show="show6">
+                    <v-divider></v-divider>
+                    <v-card-text>Fun fact! Saturn generates more heat in itself than it receives from the sun. Saturn is the 6 planet placed away from the sun. As you very well know, its the planet with a ring around it, which off the record looks pretty cool. It's also the second biggest planet in the solar system from Jupiter. Like jupiter, the planet is also comprised with gas about 96% hydrogen, and 3% helium, which also makes saturn's core just as rocky or even rockier than Jupiter's core. Again like jupiter, saturn is also surrounded by a sea with a metallic liquid.</v-card-text>
+                  </div>
+                </v-expand-transition>
+              </div>
+            </v-card>
+          </v-col>
+
+          <!--Venus-->
+          <v-col>
+            <v-card class="mx-auto" max-width="344" color="transparent" flat>
+              <v-img src="../assets/solarsystem/venus.png" height="200px"></v-img>
+              <div class="planettextback">
+                <v-card-title>Neptune</v-card-title>
+                <v-card-subtitle>Nr.6 - the second biggest planet AND got a cool belt!</v-card-subtitle>
+                <v-card-actions>
+                  <v-btn color="yellow" text>Explore</v-btn>
+                  <v-spacer></v-spacer>
+                  <v-btn icon @click="show7=!show7">
+                    <v-icon>{{ show7 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                  </v-btn>
+                </v-card-actions>
+                <v-expand-transition>
+                  <div v-show="show7">
+                    <v-divider></v-divider>
+                    <v-card-text>Fun fact! Saturn generates more heat in itself than it receives from the sun. Saturn is the 6 planet placed away from the sun. As you very well know, its the planet with a ring around it, which off the record looks pretty cool. It's also the second biggest planet in the solar system from Jupiter. Like jupiter, the planet is also comprised with gas about 96% hydrogen, and 3% helium, which also makes saturn's core just as rocky or even rockier than Jupiter's core. Again like jupiter, saturn is also surrounded by a sea with a metallic liquid.</v-card-text>
+                  </div>
+                </v-expand-transition>
+              </div>
+            </v-card>
+          </v-col>
+
+          <!--Uranus-->
+          <v-col>
+            <v-card class="mx-auto" max-width="344" color="transparent" flat>
+              <v-img src="../assets/solarsystem/uranus.png" height="200px"></v-img>
+              <div class="planettextback">
+                <v-card-title>Uranus</v-card-title>
+                <v-card-subtitle>Nr.6 - the second biggest planet AND got a cool belt!</v-card-subtitle>
+                <v-card-actions>
+                  <v-btn color="yellow" text>Explore</v-btn>
+                  <v-spacer></v-spacer>
+                  <v-btn icon @click="show8=!show8">
+                    <v-icon>{{ show8 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                  </v-btn>
+                </v-card-actions>
+                <v-expand-transition>
+                  <div v-show="show8">
+                    <v-divider></v-divider>
+                    <v-card-text>Fun fact! Saturn generates more heat in itself than it receives from the sun. Saturn is the 6 planet placed away from the sun. As you very well know, its the planet with a ring around it, which off the record looks pretty cool. It's also the second biggest planet in the solar system from Jupiter. Like jupiter, the planet is also comprised with gas about 96% hydrogen, and 3% helium, which also makes saturn's core just as rocky or even rockier than Jupiter's core. Again like jupiter, saturn is also surrounded by a sea with a metallic liquid.</v-card-text>
+                  </div>
+                </v-expand-transition>
+              </div>
+            </v-card>
+          </v-col>
+          <!--Pluto-->
+          <v-col>
+            <v-card class="mx-auto" max-width="344" color="transparent" flat>
+              <v-img src="../assets/solarsystem/pluto.png" height="200px"></v-img>
+              <div class="planettextback">
+                <v-card-title>Pluto</v-card-title>
+                <v-card-subtitle>Nr.6 - the second biggest planet AND got a cool belt!</v-card-subtitle>
+                <v-card-actions>
+                  <v-btn color="yellow" text>Explore</v-btn>
+                  <v-spacer></v-spacer>
+                  <v-btn icon @click="show9=!show9">
+                    <v-icon>{{ show9 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
+                  </v-btn>
+                </v-card-actions>
+                <v-expand-transition>
+                  <div v-show="show9">
+                    <v-divider></v-divider>
+                    <v-card-text>Fun fact! Saturn generates more heat in itself than it receives from the sun. Saturn is the 6 planet placed away from the sun. As you very well know, its the planet with a ring around it, which off the record looks pretty cool. It's also the second biggest planet in the solar system from Jupiter. Like jupiter, the planet is also comprised with gas about 96% hydrogen, and 3% helium, which also makes saturn's core just as rocky or even rockier than Jupiter's core. Again like jupiter, saturn is also surrounded by a sea with a metallic liquid.</v-card-text>
+                  </div>
+                </v-expand-transition>
+              </div>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-col>
