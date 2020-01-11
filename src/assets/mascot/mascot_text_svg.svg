@@ -215,10 +215,8 @@
 														<use xlink:href="#SVGID_35_"  style="overflow:visible;"/>
 													</clipPath>
 													<g class="st21">
-														<text transform="matrix(1 0 0 1 191.332 290.4658)" class="st16 st17">A place</text>
-														<text transform="matrix(1 0 0 1 340.132 290.4658)" class="st16 st17"> </text>
-														<text transform="matrix(1 0 0 1 348.332 290.4658)" class="st16 st17">to learn</text>
-														<text transform="matrix(1 0 0 1 505.532 290.4658)" class="st16 st17"> </text>
+														<text transform="matrix(1 0 0 1 191.332 290.4658)" class="st16 st17">A place to learn</text>
+														
 												
 													</g>
 												</g>
@@ -239,7 +237,7 @@
 														<use xlink:href="#SVGID_39_"  style="overflow:visible;"/>
 													</clipPath>
 													<g class="st23">
-														<text transform="matrix(1 0 0 1 191.332 361.2969)" class="st16 st17">while having</text>
+														<text transform="matrix(1 0 0 1 191.332 361.2969)" class="st16 st17">while having fun!</text>
 													</g>
 												</g>
 												<g>
@@ -249,9 +247,7 @@
 													<clipPath id="SVGID_42_">
 														<use xlink:href="#SVGID_41_"  style="overflow:visible;"/>
 													</clipPath>
-													<g class="st24">
-														<text transform="matrix(1 0 0 1 451.7598 361.2969)" class="st16 st17">fun!</text>
-													</g>
+													
 												</g>
 											</g>
 										</g>
