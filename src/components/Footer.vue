@@ -1,14 +1,14 @@
 <template>
   <v-footer padless>
-    <v-card class="flex" tile color="#f4dc8e">
+    <v-card class="flex" tile>
       <v-img
         src="https://cdn.dribbble.com/users/164052/screenshots/1323970/attachments/186300/footer-bg.jpg"
         height="400"
         gradient="to top right, rgba(120,56,70,.3), rgba(00,00,00,.7)"
       >
-        <v-card-title class="#f4dc8e--text mx-auto my-auto">
+        <v-card-title class="white--text">
           <v-spacer></v-spacer>
-          
+
           <a href="https://facebook.com">
             <v-btn dark icon>
               <i class="fab fa-facebook-square"></i>
@@ -36,9 +36,8 @@
 
         <!-- Footer Info box-->
         <div>
-           
-          <v-container white--text>
-            <Solarsystem></Solarsystem>
+           <Solarsystem></Solarsystem>
+        <v-container white--text>
             <v-col>
             <v-row dense no-gutters justify="space-between" justify-md="space-between" justify-sm="center">
               <v-col cols="auto">
@@ -65,7 +64,7 @@
             </v-row>
             </v-col>
           </v-container>
- 
+          
         </div>
       </v-img>
       <v-card-text class="py-2 white--text text-left black mx-auto">
@@ -82,7 +81,6 @@
         </div>
       </v-card-text>
       <v-card-text class="py-2 white--text text-center black">
-       
         {{ new Date().getFullYear() }} —
         <strong>Safe Space</strong>
       </v-card-text>
@@ -93,24 +91,12 @@
 
 </template>
 
-<script scoped>
-import Solarsystem from "./Solarsystem.vue";
+<script>
+import Solarsystem from "./Solarsystem";
+import * as easings from 'vuetify/es5/services/goto/easing-patterns';
+
 export default {
-  name: "App",
-  components: {
-    Solarsystem
-  },
-  props: {
-    source: String
-  }
-};
-</script>
-
-<script scoped>
-  import * as easings from 'vuetify/es5/services/goto/easing-patterns'
-
-  export default {
-    data () {
+   data () {
       return {
         type: 'number',
         number: 0,
@@ -121,34 +107,35 @@ export default {
         easings: Object.keys(easings),
       }
     },
-    computed: {
+       computed: {
       target () {
         const value = this[this.type]
         if (!isNaN(value)) return Number(value)
         else return value
       },
-      options () {
-        return {
-          duration: this.duration,
-          offset: this.offset,
-          easing: this.easing,
-        }
-      },
-    },
-  }
+       },
+  name: "App",
+  components: {
+    Solarsystem
+  },
+  props: {
+    source: String
+  },
+
+};
 </script>
+
+
 
 <style scoped>
 h2{
   font-size:13px;
 }
-
 @media (max-width:400px){
   p {
   font-size: 10px;
 }
 }
-
 </style>
 
 
@@ -156,26 +143,21 @@ h2{
 i {
   font-size: 50px;
 }
-
 @media (min-width:700px){
   i {
   margin: 20px;
 }
 }
-
 @media (max-width:300px){
   i {
   font-size: 35px;
   margin:0;
 }
-
 }
-
 a:active,
 a:link,
 a:hover,
 a:visited {
   text-decoration: none;
 }
-
 </style>
