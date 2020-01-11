@@ -13,16 +13,16 @@
 	.st7{clip-path:url(#SVGID_16_);enable-background:new    ;}
 	.st8{clip-path:url(#SVGID_18_);enable-background:new    ;}
 	.st9{clip-path:url(#SVGID_20_);}
-	.st10{font-family:'Vox-Light';}
+	.st10{font-family:'Vox';}
 	.st11{font-size:76.2013px;}
 	.st12{clip-path:url(#SVGID_22_);}
-	.st13{font-family:'Vox-Bold';}
+	.st13{font-family:'Vox';}
 	.st14{clip-path:url(#SVGID_28_);enable-background:new    ;}
 	.st15{clip-path:url(#SVGID_30_);}
 	.st16{font-family:'Vox';}
 	.st17{font-size:44.6321px;}
 	.st18{clip-path:url(#SVGID_32_);}
-	.st19{font-family:'Vox-Semibold';}
+	.st19{font-family:'Vox';}
 	.st20{clip-path:url(#SVGID_34_);}
 	.st21{clip-path:url(#SVGID_36_);}
 	.st22{clip-path:url(#SVGID_38_);}
@@ -219,9 +219,7 @@
 													<g class="st21">
 														<text transform="matrix(1 0 0 1 191.332 290.4658)" class="st16 st17">A place</text>
 														<text transform="matrix(1 0 0 1 340.132 290.4658)" class="st16 st17"> </text>
-														<text transform="matrix(1 0 0 1 348.332 290.4658)" class="st16 st17">to lea</text>
-														<text transform="matrix(1 0 0 1 461.532 290.4658)" class="st16 st17">r</text>
-														<text transform="matrix(1 0 0 1 479.532 290.4658)" class="st16 st17">n</text>
+														<text transform="matrix(1 0 0 1 348.332 290.4658)" class="st16 st17">to learn</text>
 														<text transform="matrix(1 0 0 1 505.532 290.4658)" class="st16 st17"> </text>
 												
 													</g>
@@ -243,7 +241,7 @@
 														<use xlink:href="#SVGID_39_"  style="overflow:visible;"/>
 													</clipPath>
 													<g class="st23">
-														<text transform="matrix(1 0 0 1 191.332 361.2969)" class="st16 st17">while having </text>
+														<text transform="matrix(1 0 0 1 191.332 361.2969)" class="st16 st17">while having</text>
 													</g>
 												</g>
 												<g>
