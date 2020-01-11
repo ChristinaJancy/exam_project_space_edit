@@ -64,6 +64,8 @@
   </v-col>
    </v-row>
 
+ <v-responsive :aspect-ratio="16/9">
+ </v-responsive>
 
   </v-content>
 </template>
