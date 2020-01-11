@@ -108,7 +108,6 @@
       </v-col>
         <v-col cols="12" md="2">       
 
-<!-- Beginning of drawing submit-->
 <template>
    <v-form v-model="valid">
      <strong class="white--text">Submit drawing</strong>
@@ -175,10 +174,13 @@
    </v-form>
 
 </template>
-</v-col> 
+
+</v-col>
+
+         
+     
     </v-row>
 
-    <!-- drawing cards begin-->
     <v-card id="drawingcard" color="transparent">
       <v-container fluid>
         <v-row dense>
@@ -227,6 +229,31 @@
     </v-card>
   </v-content>
 </template>
+
+<script scoped>
+  export default {
+    data: () => ({
+      valid: true,
+      firstname: '',
+      lastname: '',
+      nameRules: [
+        v => !!v || 'Name is required',
+        v => v.length <= 10 || 'Name must be less than 10 characters',
+      ],
+      email: '',
+      emailRules: [
+        v => !!v || 'E-mail is required',
+        v => /.+@.+/.test(v) || 'E-mail must be valid',
+      ],
+      methods: {
+      reset () {
+        this.$refs.form.reset()
+      },
+    },
+    }),
+    
+  }
+</script>
 
 
 <script>
@@ -336,43 +363,15 @@ export default {
 };
 </script>
 
-<script scoped>
-  export default {
-    data: () => ({
-      valid: true,
-      firstname: '',
-      lastname: '',
-      nameRules: [
-        v => !!v || 'Name is required',
-        v => v.length <= 10 || 'Name must be less than 10 characters',
-      ],
-      email: '',
-      emailRules: [
-        v => !!v || 'E-mail is required',
-        v => /.+@.+/.test(v) || 'E-mail must be valid',
-      ],
-      methods: {
-      reset () {
-        this.$refs.form.reset()
-      },
-    },
-    }),
-    
-  }
-</script>
-
-
 <style lang="scss">
 #drawingcard {
   margin: 0 30px 60px 30px;
 }
-
 @media (min-width: 550px) {
   #drawing {
     height: 500px;
   }
 }
-
 @media (max-width: 550px) {
   #drawing {
     height: auto;
@@ -385,7 +384,6 @@ export default {
   background-image: url("https://assetstools.cosentino.com/api/v1/bynder/color/SL6/tablahd/SL6-fullslab.jpg?w=1920&h=1080&fit=crop&auto=compress,format");
   background-size: cover;
 }
-
 /* Basic styling */
 svg {
   width: 100%;
@@ -396,16 +394,13 @@ svg {
   font-size: 5em;
   line-height: 0.9;
 }
-
 /* Animate the background shapes */
 #background path {
   animation: pulse 4s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
-
   /* Necessary to keep the SVG objects in place while scaling */
   transform-origin: 50% 50%;
   transform-box: fill-box;
 }
-
 /* Reveal the desired lines of text in the desired order */
 #textClip text:nth-of-type(n + 1):nth-of-type(-n + 3) {
   animation: showFirst 12s infinite;
@@ -416,7 +411,6 @@ svg {
 #textClip text:nth-of-type(n + 7):nth-of-type(-n + 9) {
   animation: showThird 12s infinite;
 }
-
 @keyframes pulse {
   /* Rotating it along with the scale makes it a little bit more fancy */
   0%,
