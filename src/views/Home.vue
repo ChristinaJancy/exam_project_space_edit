@@ -20,30 +20,51 @@
       ></vue-particles>
 
     <!-- Parallax begins (no framework) -->
-<v-col cols="auto" class="mx-auto">
-  <v-row class="mx-auto my-auto" justify="center">
+
+
+  <v-row justify="center">
+    <v-col cols="12">
         <div class="main-title">
           <h1 absolute>Safe Space</h1>
         </div>
-      <v-col
-          cols="auto"
-        >
-      <v-img
-          max-width="400"
-          max-height="400"
+    </v-col>
+  </v-row>
+  <v-row class="mx-auto my-auto" justify="space-around">
+ <v-col 
+ style="margin-top:300px;"
+  cols="12"
+  
+  >
+          <v-img
+          id="mascottext"
           contain
-           src="../assets/mascot/spaceman mascot.png"
+          max-height="800"
+          max-width="1300"
+           src="../assets/mascot/mascot_text_svg.svg"
           ></v-img>
+         
           <!-- <div style="background-color:#00000070;">
           <h2 tag="h2" class="white--text text-md-center text-sm-center ">Hello, I am Ceres!</h2>
           <p tag="p" class="white--text text-md-center text-sm-center ">and welcome to Safe Space</p>
           <p tag="p" class="white--text text-md-center text-sm-center">-a place to have fun while learning!</p>
      </div> -->
-      </v-col>
+  </v-col>
+
+  <v-col
+ style="margin-top:-400px;"
+  cols="4"
+  >
+          <v-img
+          id="mascot"
+          max-height="450"
+          max-width="450"
+          contain
+           src="../assets/mascot/spaceman mascot.png"
+          ></v-img>
+  </v-col>
    </v-row>
-</v-col>
- <v-responsive :aspect-ratio="16/9">
- </v-responsive>
+
+
   </v-content>
 </template>
 
@@ -145,6 +166,7 @@ h2{
 h2{
   font-size: 35px;
 }
+
 }
 
 
@@ -159,12 +181,27 @@ h2{
 h2{
   font-size: 30px;
 }
+#mascottext{
+  margin-top:-50px;
 }
+
+#mascot{
+ margin-top:100px;
+}
+}
+
 @media (max-width: 600px) {
   .main-title h1 {
     font-size: 2rem;
     margin-top:50px;
   }
+  #mascottext{
+  margin-top:-190px;
+}
+
+#mascot{
+ margin-top:240px;
+}
    
 }
 @media (max-width: 300px) {
